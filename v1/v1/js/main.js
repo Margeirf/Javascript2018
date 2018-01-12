@@ -1,4 +1,2 @@
+document.getElementById("IdForJavascript").textContent="hello world";
 
-function changeText(){
-    document.getElementById("IdForJavascript").textContent="hello woerldsed";
-}
