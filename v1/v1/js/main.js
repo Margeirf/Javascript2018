@@ -1,2 +1,1 @@
-document.getElementById("IdForJavascript").textContent="hello world";
-
+document.getElementById("IdForJavascript").textContent = "hello world";
