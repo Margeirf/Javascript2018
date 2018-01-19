@@ -34,4 +34,9 @@ var b = function(){}
 
 //  8.) 'use strict' segjir þýðandanum að þetta forrit eigi að uppfylla strangar málfræði kröfur sem komu í ECMAScript 5
 //  9.) af því að javascript notar hoist til þess að endur raða kóðanum í þýðandanum og setur breytur og föll efst
-//  10.) 
+//  10.) niðurstaðan er 8 vegna þess að þegar aðferð er skilgreind tvisvar þá skrifar seinna gildið yfir fyrra
+//  11.) þýðandinn (allavegana í chrome) hjálpar þér og setur sjálfkrafa var fyrir framan en það tekur auka tíma og getur hægt á síðunni
+//  12.) þessi kóði birtir hello world með einnota function þeas það er ekki hægt að nota þetta function seinna því að það hefur ekkert nafn
+//  13.) það eru til tvær scopes þær eru global og local og eru nauðsinlegar í stærri forritum til þess að minnka líkurnar á því að yfirskrifa óvart breytur sem hava verið búnar til áður
+//       global variables eru aðgengilegar allstaðar í forritinu en local eru bara aðgengilegar í sínu umhverfi t.d. if setningu eða aðferð
+//  14.) call stack er "feature" sem þýðandinn notar til þess að skipuleggja allar aðferðirnar í forritinu og heldur utanum það hvaða aðferð er að keyra að hverju sinni
