@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.GameName {
+    text-align: center;
+}
+
+.top {
+    border-bottom: 2px solid black;
+}
+
+.middle {
+    margin-top: 20px;
+}
+
+.left {
+    width: 15%;
+    float: left;
+    border-collapse: inherit;
+    border: 2px solid black;
+    height: 200px;
+    margin: 0;
+}
+
+.center {
+    width: 70%;
+    float: left;
+    border-collapse: collapse;
+    border: 2px solid black;
+    height: 200px;
+    margin: 0;
+}
+
+.right {
+    width: 15%;
+    float: left;
+    border-collapse: collapse;
+    border: 2px solid black;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.numbers {
+    text-align: center;
+}
+
+.smallText {
+    text-align: center;
+}
+
+.question {
+    text-align: center;
+}
+
+.bottom {
+    margin-top: 240px;
+    border-top: 2px solid black;
+    padding-top: 20px;
+}
+
+.btn {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px 80px;
+    background: lightblue;
+}
+
+.true {
+    background: lightgreen;
+}
+
+.false {
+    background: red;
+}
+
+.correct {
+    background: green;
+}
