@@ -67,8 +67,13 @@
 .btn {
     border-radius: 10px;
     border: 1px solid black;
-    padding: 10px 80px;
+    padding: 10px;
     background: lightblue;
+    margin: 10px;
+}
+
+.btn:hover{
+    background: green;
 }
 
 .true {
