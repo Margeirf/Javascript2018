@@ -10,30 +10,27 @@ q2.right = 0;
 
 let counter = 0;
 
-let question = document.getElementById("question");
-let time = document.getElementById("time");
-let points = document.getElementById("points");
-let bottom = document.getElementById("bottom");
-let questionAmount = document.getElementById("questionAmount");
+let points = 0;
 
-var buttons = "";
+let cont = document.getElementById("container");
+
+var stuff = "";
+stuff = '<div class="top"><h1 class="GameName">Quiz game</h1></div><div class="middle"><div class="left"><h3 class="smallText">Time</h3>';
 
 if(counter == 0){
-    question.textContent = q1.question;
-    questionAmount.textContent = "1/2";
+    stuff += '<h1 class="numbers" id="time">0</h1></div><div class="center"><p class="smallText" id="questionAmount">1/2</p>';
+    stuff += '<h2 class="question" id="question">' + q1.question + '</h2>';
+    
+    stuff += '</div><div class="right"><h3 class="smallText">Points</h3>';
+    
+    stuff += '<h1 class="numbers" id="points">' + points + '</h1>';
+    
+    stuff += '</div></div></div><div class="bottom" id="bottom">';
+    
     for(let i=0; i < q1.answeres.length; i++){
-        buttons += '<a class="btn">' + q1.answeres[i] + '</a>';
+        stuff += '<a class="btn">' + q1.answeres[i] + '</a>';
     }
-    bottom.innerHTML = buttons;
-    console.log(bottom);
-}
-
-if(counter == 1){
-    question.textContent = q2.question;
-    questionAmount.textContent = "2/2";
-    for(let i=0; i < q2.answeres.length; i++){
-        buttons += '<a class="btn">' + q2.answeres[i] + '</a>';
-    }
-    bottom.innerHTML = buttons;
-    console.log(bottom);
+    
+    stuff += '</div>';
+    cont.innerHTML = stuff;
 }
