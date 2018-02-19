@@ -18,3 +18,14 @@ querySelectorAll() finnur öll element með ákveðinn css classa eins og .conta
     el.className = 'cool';
     }
 ```
+
+hér eru öll element af týpunni li sett í lista og ef það eru fleiri en 0 li element þá fær li nr. 3 css classann "cool"
+
+## 4.) Hvað gerir getElementsByTagName()? Hverju eru skilað? komdu með kóðsýnidæmi.
+
+```javascript
+    var elements = document.getElementsByTagName('li');
+```
+
+þessi aðferð finnur öll element með nafninu li og indexar þau
+
